@@ -18,7 +18,7 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
     var box4 = SKSpriteNode()
     var box5 = SKSpriteNode()
     
-    var gameStared = false
+    var gameStarted = false
     var originalPosition: CGPoint?
     
     var score = 0
@@ -126,7 +126,7 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if gameStared == false {
+        if gameStarted == false {
             if let touch = touches.first {
                 let touchLocation = touch.location(in: self)
                 let touchNodes = nodes(at: touchLocation)
@@ -149,7 +149,7 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
         
       
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if gameStared == false {
+        if gameStarted == false {
             if let touch = touches.first {
                 let touchLocation = touch.location(in: self)
                 let touchNodes = nodes(at: touchLocation)
@@ -171,7 +171,7 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if gameStared == false {
+        if gameStarted == false {
             if let touch = touches.first {
                 let touchLocation = touch.location(in: self)
                 let touchNodes = nodes(at: touchLocation)
@@ -186,7 +186,7 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
                                 let impulse = CGVector(dx: dx, dy: dy)
                                 bird.physicsBody?.applyImpulse(impulse)
                                 bird.physicsBody?.affectedByGravity = true
-                                gameStared = true
+                                gameStarted = true
                             }
                         }
                     }
@@ -204,7 +204,7 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
         
         if let birdPhysicsBody = bird.physicsBody {
             if  birdPhysicsBody.velocity.dx <= 0.1 && birdPhysicsBody.velocity.dy <= 0.1 &&
-                    birdPhysicsBody.angularVelocity <= 0.1 && gameStared == true {
+                    birdPhysicsBody.angularVelocity <= 0.1 && gameStarted == true {
                 bird.physicsBody?.affectedByGravity = false
                 bird.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
                 bird.physicsBody?.angularVelocity = 0
@@ -213,7 +213,7 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
                 
                 score = 0
                 scoreLabel.text = String(score)
-                gameStared = false
+                gameStarted = false
             }
         }
     }
