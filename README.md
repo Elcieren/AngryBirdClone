@@ -1,4 +1,4 @@
-## AngryBirdClone Uygulama Ici Video
+## AngryBirdClone Uygulama Video
 ![Ekran-Kaydı-2024-10-16-22 25 59](https://github.com/user-attachments/assets/d2dbad77-35e8-410f-b56b-a462d1d26cf5)
 <details>
     <summary><h2>Uygulma Amacı</h2></summary>
