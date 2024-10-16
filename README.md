@@ -2,17 +2,7 @@
     <summary><h2>Uygulma Amacı</h2></summary>
   Bu kod, basit bir fizik tabanlı oyunun temelini oluşturuyor. Oyuncu, ekrana dokunarak kuşu sürükleyebilir ve serbest bırakarak kuşu hareket ettirebilir. Kuş, kutularla çarpıştığında skor artar ve kuş yavaşladığında oyun sıfırlanır. SpriteKit'in fizik motorunu kullanarak etkileşimleri yönetmek ve skor takibi yapmak için temel bir yapı sunar
   </details> 
-  
-  <details>
-    <summary><h2>Kütüphanelerin İçe Aktarılması</h2></summary>
-    CoreML: Makine öğrenimi modelleri ile çalışmak için kullanılır.
-    Vision: Görsel analiz ve tanıma işlemleri için kullanılır.
-    
-    ```
-    import CoreML
-    import Vision
-    ```
-  </details> 
+
 
   <details>
     <summary><h2>SpriteNode ve Değişkenlerin Tanımlanması</h2></summary>
