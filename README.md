@@ -1,3 +1,5 @@
+## AngryBirdClone Uygulama Ici Video
+![Ekran-Kaydı-2024-10-16-22 25 59](https://github.com/user-attachments/assets/d2dbad77-35e8-410f-b56b-a462d1d26cf5)
 <details>
     <summary><h2>Uygulma Amacı</h2></summary>
   Bu kod, basit bir fizik tabanlı oyunun temelini oluşturuyor. Oyuncu, ekrana dokunarak kuşu sürükleyebilir ve serbest bırakarak kuşu hareket ettirebilir. Kuş, kutularla çarpıştığında skor artar ve kuş yavaşladığında oyun sıfırlanır. SpriteKit'in fizik motorunu kullanarak etkileşimleri yönetmek ve skor takibi yapmak için temel bir yapı sunar
